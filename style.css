@@ -1,0 +1,263 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #2b2b2b;
+  color: #f9f9f9;
+}
+
+/* Header */
+header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+header .logo img{
+  width: 40px;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#dark-mode-toggle {
+  background-color: white;
+  color: #3f51b5;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Search Bar */
+.search-section {
+  text-align: center;
+  padding: 20px;
+}
+
+#search-bar {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Categories */
+.categories {
+  padding: 20px;
+  text-align: center;
+}
+
+.category-list button {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Featured Books */
+/* Featured Books Section */
+.featured-books {
+  padding: 20px;
+  text-align: center;
+}
+
+.featured-books h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.book-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book-card {
+  width: 250px;
+  padding: 15px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.book-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.book-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.buy-button {
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #283593;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+}
+
+.page-btn {
+  padding: 10px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#page-number {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #3f51b5;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .book-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #search-bar {
+    width: 80%;
+  }
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  /* Make the button rounded */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #283593;
+}
+
+main#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px;
+  background-color: #acbcf0;
+  
+  height: 400px;
+}
+
+main#home .content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+main#home .image img {
+  width: 350px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+main#home .text {
+  max-width: 500px;
+}
+
+.dynamic-text {
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(to right, #2d58c3, #7baddb);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: textAnimation 4s ease-in-out infinite alternate;
+}
+
+@keyframes textAnimation {
+  0% {
+      letter-spacing: 0;
+  }
+  100% {
+      letter-spacing: 3px;
+  }
+}
