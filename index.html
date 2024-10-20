@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Book Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    
+    <div class="logo">
+      <img src="assets/bghome.png" alt="#">NovelNook</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="dark-mode-toggle">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="home">
+    <div class="content">
+        <div class="image">
+            <img src="assets/bg2.png" alt="E-Book Illustration">
+        </div>
+        <div class="text">
+            <h1 class="dynamic-text">Unravel a Universe of Stories</h1>
+            <p>Step into a world where every page holds a new adventure. Dive deep into our rich collection of e-books.</p>
+            
+        </div>
+    </div>
+</main>
+
+  <!-- Search Bar -->
+  <section class="search-section">
+    <input type="text" id="search-bar" placeholder="Search for books...">
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Categories</h2>
+    <div class="category-list">
+      <button data-category="fiction">Fiction</button>
+      <button data-category="non-fiction">Non-Fiction</button>
+      <button data-category="biography">Biography</button>
+      <button data-category="fantasy">Fantasy</button>
+      <!-- Add more categories -->
+    </div>
+  </section>
+
+  <!-- Featured Books -->
+  <section class="featured-books">
+    <h1>Featured Books</h1>
+    <div class="book-list">
+      <div class="book-card">
+        <img src="assets/book1.png" alt="Book 1" class="book-cover">
+        <h3 class="book-title">To kill a Mocking Bird</h3>
+        <!-- <p class="book-description">A brief description of the book.</p> -->
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="book-card">
+        <img src="assets/book2.png" alt="Book 2" class="book-cover">
+        <h3 class="book-title">It ends with us</h3>
+        <!-- <p class="book-description">A brief description of the book.</p> -->
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="book-card">
+        <img src="assets/book3.png" alt="Book 3" class="book-cover">
+        <h3 class="book-title">Stephen Hawking</h3>
+        <!-- <p class="book-description">A brief description of the book.</p> -->
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="book-list">
+        <div class="book-card">
+          <img src="assets/book4.png" alt="Book 1" class="book-cover">
+          <h3 class="book-title">Pride and prejudice</h3>
+          <!-- <p class="book-description">A brief description of the book.</p> -->
+          <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="book-card">
+          <img src="assets/book5.png" alt="Book 2" class="book-cover">
+          <h3 class="book-title">Atomic Habit</h3>
+          <!-- <p class="book-description">A brief description of the book.</p> -->
+          <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="book-card">
+          <img src="assets/book6.png" alt="Book 3" class="book-cover">
+          <h3 class="book-title">Soul</h3>
+          <!-- <p class="book-description">A brief description of the book.</p> -->
+          <button class="buy-button">Buy Now</button>
+        </div>
+        
+      <!-- Add more featured books here -->
+    </div>
+  </section>
+  
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <button class="page-btn" id="prev-page">Previous</button>
+      <span id="page-number">1</span>
+      <button class="page-btn" id="next-page">Next</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 E-BookStore. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
