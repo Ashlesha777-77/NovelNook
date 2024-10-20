@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Categories Page */
+    .categories-page {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .category-list-page {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .category-item {
+      display: inline-block;
+      width: 200px;
+      /* Adjust width of the cards */
+      padding: 15px;
+      background-color: #3f51b5;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 18px;
+      text-align: center;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .category-item:hover {
+      background-color: #283593;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">E-BookStore</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Categories Section -->
+  <section class="categories-page">
+    <h1>Explore Book Categories</h1>
+    <div class="category-list-page">
+      <a href="#" class="category-item">Fiction</a>
+      <a href="#" class="category-item">Non-Fiction</a>
+      <a href="#" class="category-item">Biography</a>
+      <a href="#" class="category-item">Fantasy</a>
+      <a href="#" class="category-item">Science</a>
+      <a href="#" class="category-item">Technology</a>
+      <!-- Add more categories as needed -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 E-BookStore. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
